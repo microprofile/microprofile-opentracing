@@ -47,7 +47,7 @@ public class TestTracer implements Tracer {
 
     /**
      * Get a list of accumulated spans.
-     * 
+     *
      * @return List of spans.
      */
     public List<TestSpan> getSpans() {
@@ -56,7 +56,7 @@ public class TestTracer implements Tracer {
 
     /**
      * Set the list of spans.
-     * 
+     *
      * @param newSpans
      *            List of spans.
      */
@@ -116,7 +116,7 @@ public class TestTracer implements Tracer {
 
     /**
      * Convert the list of spans into a tree.
-     * 
+     *
      * @return Tree of spans.
      */
     public TestSpanTree spanTree() {

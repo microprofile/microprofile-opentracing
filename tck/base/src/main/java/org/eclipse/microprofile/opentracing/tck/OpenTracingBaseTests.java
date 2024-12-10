@@ -105,7 +105,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Create web service URL.
-     * 
+     *
      * @param service
      *            Web service path
      * @param relativePath
@@ -118,7 +118,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Create web service URL.
-     * 
+     *
      * @param service
      *            Web service path
      * @param relativePath
@@ -139,7 +139,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Execute a remote web service and return the content.
-     * 
+     *
      * @param service
      *            Web service path
      * @param relativePath
@@ -155,7 +155,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Execute a remote web service and return the content.
-     * 
+     *
      * @param service
      *            Web service path
      * @param relativePath
@@ -187,13 +187,13 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Execute a remote web service and return the span tree.
-     * 
+     *
      * @return TestSpanTree
      */
     protected TestSpanTree executeRemoteWebServiceTracerTree() {
         TestSpanTree testSpanTree = executeRemoteWebServiceRaw(
                 TracerWebService.REST_TRACER_SERVICE_PATH, TracerWebService.REST_GET_TRACER, Status.OK)
-                        .readEntity(TestTracer.class).spanTree();
+                .readEntity(TestTracer.class).spanTree();
         debug("Tracer returned " + testSpanTree);
         return testSpanTree;
     }
@@ -320,7 +320,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Get operation name depending on the {@code spanKind}.
-     * 
+     *
      * @param spanKind
      *            The type of span.
      * @param httpMethod
@@ -343,7 +343,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Create a tags collection for expected span tags.
-     * 
+     *
      * @param spanKind
      *            Value for {@link Tags#SPAN_KIND}
      * @param httpMethod
@@ -375,7 +375,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Create a tags collection for expected span tags with an error.
-     * 
+     *
      * @param service
      *            REST service.
      * @param spanKind
@@ -396,7 +396,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Do the actual testing and assertion of a nested call.
-     * 
+     *
      * @param uniqueId
      *            Some unique ID.
      * @param nestDepth
@@ -500,7 +500,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Execute the nested web service.
-     * 
+     *
      * @param uniqueId
      *            Some unique ID.
      * @param nestDepth
@@ -551,7 +551,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * Create the expected span tree to assert.
-     * 
+     *
      * @param uniqueId
      *            Unique ID of the request.
      * @param nestBreadth
@@ -583,7 +583,7 @@ public abstract class OpenTracingBaseTests extends Arquillian {
 
     /**
      * The expected nested span layout.
-     * 
+     *
      * @param spanKind
      *            Span kind
      * @param uniqueId

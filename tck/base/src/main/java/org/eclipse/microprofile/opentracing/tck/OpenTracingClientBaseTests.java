@@ -46,7 +46,7 @@ import jakarta.ws.rs.core.Response.Status;
 
 /**
  * Opentracing TCK tests.
- * 
+ *
  * @author <a href="mailto:steve.m.fontes@gmail.com">Steve Fontes</a>
  */
 public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
@@ -86,7 +86,7 @@ public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
 
     /**
      * Test various Traced annotations.
-     * 
+     *
      * @throws InterruptedException
      *             Error executing web service.
      */
@@ -153,7 +153,7 @@ public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
 
     /**
      * Test a web service endpoint that shouldn't create a span.
-     * 
+     *
      * @throws InterruptedException
      *             Error executing web service.
      */
@@ -173,7 +173,7 @@ public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
 
     /**
      * Test web service with an explicit operation name.
-     * 
+     *
      * @throws InterruptedException
      *             Error executing web service.
      */
@@ -204,7 +204,7 @@ public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
 
     /**
      * Test class annotated with an operationName.
-     * 
+     *
      * @throws InterruptedException
      *             Error executing web service.
      */
@@ -246,7 +246,7 @@ public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
 
     /**
      * Test class and endpoint annotated with an operationName.
-     * 
+     *
      * @throws InterruptedException
      *             Error executing web service.
      */
@@ -296,7 +296,7 @@ public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
 
     /**
      * Common code for handling error and exception tests.
-     * 
+     *
      * @param method
      *            method of the REST endpoint.
      */
@@ -403,7 +403,7 @@ public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
     /**
      * Test the nested web service concurrently. A unique ID is generated in the URL of each request and propagated down
      * the nested spans. We extract this out of the resulting spans and ensure the unique IDs are correct.
-     * 
+     *
      * @throws InterruptedException
      *             Problem executing web service.
      * @throws ExecutionException
@@ -424,7 +424,7 @@ public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
 
     /**
      * Same as testMultithreadedNestedSpans but asynchronous client and nested requests.
-     * 
+     *
      * @throws InterruptedException
      *             Problem executing web service.
      * @throws ExecutionException
@@ -517,7 +517,7 @@ public abstract class OpenTracingClientBaseTests extends OpenTracingBaseTests {
 
     /**
      * Create a tags collection for expected span tags of a local span.
-     * 
+     *
      * @return Tags collection.
      */
     private Map<String, Object> getExpectedLocalSpanTags() {

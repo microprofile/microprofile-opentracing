@@ -181,7 +181,7 @@ public class TestServerWebServices {
 
     /**
      * Simple JAXRS endpoint.
-     * 
+     *
      * @return OK response
      */
     @GET
@@ -193,7 +193,7 @@ public class TestServerWebServices {
 
     /**
      * Endpoint which creates local span.
-     * 
+     *
      * @return OK response
      */
     @GET
@@ -206,7 +206,7 @@ public class TestServerWebServices {
 
     /**
      * Async endpoint which creates local span.
-     * 
+     *
      * @param asyncResponse
      *            holds state of the asynchronous processing
      */
@@ -220,7 +220,7 @@ public class TestServerWebServices {
 
     /**
      * Returns HTTP 500 error.
-     * 
+     *
      * @return error response
      */
     @GET
@@ -232,7 +232,7 @@ public class TestServerWebServices {
 
     /**
      * Returns HTTP 500 error.
-     * 
+     *
      * @return Response Never returned because an exception is thrown.
      */
     @GET
@@ -244,7 +244,7 @@ public class TestServerWebServices {
 
     /**
      * Web service endpoint to test Traced annotations.
-     * 
+     *
      * @return HTTP 200 OK.
      */
     @GET
@@ -267,7 +267,7 @@ public class TestServerWebServices {
 
     /**
      * Web service endpoint to test a Traced annotation with an exception.
-     * 
+     *
      * @return HTTP 200 OK.
      */
     @GET
@@ -284,7 +284,7 @@ public class TestServerWebServices {
 
     /**
      * Shouldn't create a span.
-     * 
+     *
      * @return OK response
      */
     @Traced(value = false)
@@ -297,7 +297,7 @@ public class TestServerWebServices {
 
     /**
      * Traced with an explicit operation name.
-     * 
+     *
      * @return OK response
      */
     @Traced(operationName = REST_OPERATION_NAME)
@@ -381,7 +381,7 @@ public class TestServerWebServices {
 
     /**
      * Endpoint which creates local span.
-     * 
+     *
      * @return OK response
      */
     @GET
@@ -395,7 +395,7 @@ public class TestServerWebServices {
 
     /**
      * Execute a nested web service call.
-     * 
+     *
      * @param requestUrl
      *            The request URL.
      */
@@ -408,7 +408,7 @@ public class TestServerWebServices {
 
     /**
      * Execute a nested web service call asynchronously.
-     * 
+     *
      * @param requestUrl
      *            The request URL.
      * @return Future for the Response.
@@ -421,7 +421,7 @@ public class TestServerWebServices {
 
     /**
      * Create the full URL for the web service request.
-     * 
+     *
      * @param servicePath
      *            Service path component.
      * @param endpointPath
