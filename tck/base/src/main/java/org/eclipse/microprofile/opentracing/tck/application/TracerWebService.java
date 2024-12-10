@@ -66,7 +66,7 @@ public class TracerWebService {
     /**
      * Get details about completed spans. Returns a {@link org.eclipse.microprofile.opentracing.tck.tracer.TestTracer}
      * which has information on the spans.
-     * 
+     *
      * @return Injected tracer
      * @throws SecurityException
      *             Reflection issues
@@ -144,7 +144,7 @@ public class TracerWebService {
 
     /**
      * Clear accumulated spans in the Tracer.
-     * 
+     *
      * @throws IllegalAccessException
      *             Reflection issues
      * @throws IllegalArgumentException

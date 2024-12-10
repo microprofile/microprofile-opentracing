@@ -88,7 +88,7 @@ public class TestSpan implements Span {
 
     /**
      * Create span with a particular kind and operation name.
-     * 
+     *
      * @param operationName
      *            Operation name
      * @param tags
@@ -105,7 +105,7 @@ public class TestSpan implements Span {
 
     /**
      * Start time of the span.
-     * 
+     *
      * @return the startMicros
      */
     public long getStartMicros() {
@@ -114,7 +114,7 @@ public class TestSpan implements Span {
 
     /**
      * Set the start time of the span.
-     * 
+     *
      * @param newSartMicros
      *            the startMicros to set
      */
@@ -124,7 +124,7 @@ public class TestSpan implements Span {
 
     /**
      * End time of the span.
-     * 
+     *
      * @return the finishMicros
      */
     public long getFinishMicros() {
@@ -133,7 +133,7 @@ public class TestSpan implements Span {
 
     /**
      * Set the finish time of the span.
-     * 
+     *
      * @param newFinishMicros
      *            the finishMicros to set
      */
@@ -143,7 +143,7 @@ public class TestSpan implements Span {
 
     /**
      * Get the trace ID of the span.
-     * 
+     *
      * @return the traceId
      */
     public long getTraceId() {
@@ -152,7 +152,7 @@ public class TestSpan implements Span {
 
     /**
      * Set the trace ID of the span.
-     * 
+     *
      * @param newTraceId
      *            the traceId to set
      */
@@ -162,7 +162,7 @@ public class TestSpan implements Span {
 
     /**
      * Get the Parent ID of the span.
-     * 
+     *
      * @return the parentId
      */
     public long getParentId() {
@@ -171,7 +171,7 @@ public class TestSpan implements Span {
 
     /**
      * Set the parent ID of the span.
-     * 
+     *
      * @param newParentId
      *            the parentId to set
      */
@@ -181,7 +181,7 @@ public class TestSpan implements Span {
 
     /**
      * Get the Span ID.
-     * 
+     *
      * @return the spanId
      */
     public long getSpanId() {
@@ -190,7 +190,7 @@ public class TestSpan implements Span {
 
     /**
      * Set the span ID.
-     * 
+     *
      * @param newSpanId
      *            the spanId to set
      */
@@ -200,7 +200,7 @@ public class TestSpan implements Span {
 
     /**
      * Get the operation name of the span.
-     * 
+     *
      * @return the operationName
      */
     public String getCachedOperationName() {
@@ -209,7 +209,7 @@ public class TestSpan implements Span {
 
     /**
      * Set the operation name of the span.
-     * 
+     *
      * @param newCachedOperationName
      *            the operationName to set
      */
@@ -219,7 +219,7 @@ public class TestSpan implements Span {
 
     /**
      * Return a map of tags.
-     * 
+     *
      * @return the tags
      */
     public Map<String, Object> getTags() {
@@ -228,7 +228,7 @@ public class TestSpan implements Span {
 
     /**
      * Set the map of tags.
-     * 
+     *
      * @param newTags
      *            the tags to set
      */
@@ -238,7 +238,7 @@ public class TestSpan implements Span {
 
     /**
      * Return a list of log entries.
-     * 
+     *
      * @return the log entries
      */
     public List<Map<String, ?>> getLogEntries() {
@@ -247,7 +247,7 @@ public class TestSpan implements Span {
 
     /**
      * Set the list of log entries
-     * 
+     *
      * @param newLogEntries
      *            the log entries to set
      */

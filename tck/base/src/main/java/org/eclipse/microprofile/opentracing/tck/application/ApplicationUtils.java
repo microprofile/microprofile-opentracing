@@ -41,7 +41,7 @@ public class ApplicationUtils {
 
     /**
      * Create web service URL.
-     * 
+     *
      * @param baseUri
      *            Base URI.
      * @param service
@@ -55,7 +55,8 @@ public class ApplicationUtils {
         try {
             return new URL(baseUri,
                     TEST_WEB_SERVICES_CONTEXT_ROOT + "/"
-                            + service + "/" + relativePath).toString();
+                            + service + "/" + relativePath)
+                    .toString();
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
@@ -63,7 +64,7 @@ public class ApplicationUtils {
 
     /**
      * Convert a map into a query string.
-     * 
+     *
      * @param queryParameters
      *            Map to convert.
      * @return Query string.
@@ -100,7 +101,7 @@ public class ApplicationUtils {
 
     /**
      * URL-encode {@code text}.
-     * 
+     *
      * @param text
      *            Text to encode.
      * @return Encoded text.
@@ -115,7 +116,7 @@ public class ApplicationUtils {
 
     /**
      * Create an example RuntimeException used by a web service.
-     * 
+     *
      * @return New RuntimeException.
      */
     public static RuntimeException createExampleRuntimeException() {

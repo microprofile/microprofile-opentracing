@@ -71,7 +71,7 @@ public class OpenTracingMpRestClientTests extends OpenTracingBaseTests {
     /**
      * Test the nested web service concurrently. A unique ID is generated in the URL of each request and propagated down
      * the nested spans. We extract this out of the resulting spans and ensure the unique IDs are correct.
-     * 
+     *
      * @throws InterruptedException
      *             Problem executing web service.
      * @throws ExecutionException
@@ -93,7 +93,7 @@ public class OpenTracingMpRestClientTests extends OpenTracingBaseTests {
 
     /**
      * Same as testMultithreadedNestedSpans but asynchronous client and nested requests.
-     * 
+     *
      * @throws InterruptedException
      *             Problem executing web service.
      * @throws ExecutionException
@@ -171,7 +171,7 @@ public class OpenTracingMpRestClientTests extends OpenTracingBaseTests {
 
     /**
      * Execute the nested web service.
-     * 
+     *
      * @param uniqueId
      *            Some unique ID.
      * @param nestDepth
@@ -199,7 +199,7 @@ public class OpenTracingMpRestClientTests extends OpenTracingBaseTests {
 
     /**
      * The expected nested span layout.
-     * 
+     *
      * @param spanKind
      *            Span kind
      * @param uniqueId
