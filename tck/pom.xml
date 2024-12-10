@@ -36,7 +36,7 @@
         <checkstyle.methodNameFormat>^_?[a-z][a-zA-Z0-9_]*$</checkstyle.methodNameFormat>
     </properties>
 
-<dependencyManagement>
+    <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.eclipse.microprofile</groupId>
@@ -45,7 +45,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            </dependencies>
-            </dependencyManagement>
+        </dependencies>
+    </dependencyManagement>
     
 </project>
