@@ -66,13 +66,13 @@
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/eclipse/microprofile-opentracing/issues</url>
+        <url>https://github.com/microprofile/microprofile-opentracing/issues</url>
     </issueManagement>
 
     <scm>
-        <connection>scm:git:https://github.com/eclipse/microprofile-opentracing.git</connection>
-        <developerConnection>scm:git:git@github.com:eclipse/microprofile-opentracing.git</developerConnection>
-        <url>https://github.com/eclipse/microprofile-opentracing</url>
+        <connection>scm:git:https://github.com/microprofile/microprofile-opentracing.git</connection>
+        <developerConnection>scm:git:git@github.com:microprofile/microprofile-opentracing.git</developerConnection>
+        <url>https://github.com/microprofile/microprofile-opentracing</url>
         <tag>HEAD</tag>
     </scm>
 
